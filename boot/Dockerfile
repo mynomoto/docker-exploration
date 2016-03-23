@@ -1,5 +1,4 @@
 FROM frolvlad/alpine-oraclejdk8:slim
-MAINTAINER mynomoto
 
 ENV \
       # Set boot env vars
@@ -24,3 +23,5 @@ RUN boot
 
 # Directory the project
 WORKDIR /project
+
+ENTRYPOINT ["boot"]
