@@ -8,4 +8,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install saws
 
+RUN mkdir /project
+
+WORKDIR /project
+
 ENTRYPOINT ["saws"]
